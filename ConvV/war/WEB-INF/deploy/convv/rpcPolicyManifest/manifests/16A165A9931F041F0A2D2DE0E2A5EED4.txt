@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.convv.ConvV.client.Convert
+path: 97753753889D910AA6EAB09B8AA4D110.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: com.google.gwt.sample.convv.ConvV.client.GreetingService
+path: DB26A901AFAE4678C8388E74DCD238E8.gwt.rpc
