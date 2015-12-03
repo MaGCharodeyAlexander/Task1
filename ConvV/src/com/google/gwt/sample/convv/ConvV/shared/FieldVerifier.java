@@ -33,18 +33,17 @@ public class FieldVerifier {
 	 * @param name the name to validate
 	 * @return true if valid, false if invalid
 	 */
-	//проверка полученного значения на принадлежность к символам или цифрам
 	public static boolean isValidName(String value) {
 		int len = (value.length()%2);
-		boolean cetnosti;
+		boolean parity;//verification of parity
 		if (len==0){
-			cetnosti=true;
+			parity=true;
 			}
 		else {
-			cetnosti=false;
+			parity=false;
 			};
 		
-		boolean a =value.matches("^[1-9]{1,30}$")&cetnosti ;
+		boolean a =value.matches("^[1-9]{1,30}$")&parity ;
 		boolean b =value.matches("^[a-z]{1,15}$");
 		if ((a||b)) {
 			return true;

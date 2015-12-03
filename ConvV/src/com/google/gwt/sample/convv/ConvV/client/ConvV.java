@@ -31,7 +31,7 @@ public class ConvV implements EntryPoint {
 	/**
 	 * Create a remote service proxy to talk to the server-side Greeting service.
 	 */
-	private final ConvertAsync convert = GWT.create(Convert.class);
+	private final ConvertationServiseAsync convert = GWT.create(ConvertationServise.class);
 
 	/**
 	 * This is the entry point method.
@@ -116,7 +116,7 @@ public class ConvV implements EntryPoint {
 				sendButton.setEnabled(false);
 				textToServerLabel.setText(textToServer);
 				serverResponseLabel.setText("");
-				convert.ConvServer(textToServer, new AsyncCallback<String>() {
+				convert.convertationServer(textToServer, new AsyncCallback<String>() {
 					public void onFailure(Throwable caught) {
 						// Show the RPC error message to the user
 						dialogBox.setText("Problems with the connection or server");
